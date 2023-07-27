@@ -13,6 +13,14 @@
     <version>4.5.0</version>
 </dependency>
 
+<!-- https://mvnrepository.com/artifact/com.github.stephenc.monte/monte-screen-recorder -->
+<dependency>
+    <groupId>com.github.stephenc.monte</groupId>
+    <artifactId>monte-screen-recorder</artifactId>
+    <version>0.7.7.0</version>
+</dependency>
+
+
 <!-- https://mvnrepository.com/artifact/org.seleniumhq.selenium/selenium-firefox-driver -->
 <dependency>
     <groupId>org.seleniumhq.selenium</groupId>
@@ -35,6 +43,12 @@
     <artifactId>testng</artifactId>
     <version>7.6.1</version>
     <scope>test</scope>
+</dependency>
+
+<dependency>
+  <groupId>org.seleniumhq.selenium</groupId>
+  <artifactId>selenium-http-jdk-client</artifactId>
+  <version>4.8.1</version>
 </dependency>
 
 <dependency>

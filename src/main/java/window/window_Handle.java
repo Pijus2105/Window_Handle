@@ -17,9 +17,25 @@ public class window_Handle {
 		 WebDriver driver = new ChromeDriver();
 		 driver.manage().window().maximize();
 		 driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(10));
-		 driver.get("https://elphilltechnology.env/");
+		 driver.get("https://musicpromotion.club/");
 		 
-		 driver.findElement(By.xpath("//a[normalize-space()='Login']")).click();
+		 driver.findElement(By.xpath("//a[normalize-space()='Create Custom Package']")).click();
+		 
+		 
+			String parent=driver.getWindowHandle();
+			Set<String>s1=driver.getWindowHandles();
+			Iterator<String> I1= s1.iterator();
+			
+			
+
+			while(I1.hasNext())
+			{
+				String child_window=I1.next();
+				if(!parent.equals(child_window))
+				{
+				driver.switchTo().window(child_window);
+		 
+		 driver.findElement(By.xpath("//button[normalize-space()='Buy Now']")).click();
 		 
 		 driver.findElement(By.xpath("//input[@id='email']")).sendKeys("pijus@elphilltechnology.com");
 		 driver.findElement(By.xpath("//input[@id='password']")).sendKeys("Pijus2105@");
@@ -50,4 +66,6 @@ public class window_Handle {
    
 	}
 
+}
+	}
 }
